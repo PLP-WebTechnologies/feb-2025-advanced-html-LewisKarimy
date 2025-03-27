@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured HTML Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+            <li>Fifth Item</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Sample Image from Pexels" width="500">
+    </section>
+    
+    <section>
+        <h2>Contacts Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St</td>
+                    <td>+1234567890</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Ave</td>
+                    <td>+0987654321</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>789 Pine Rd</td>
+                    <td>+1122334455</td>
+                    <td>emily.johnson@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>321 Birch Ln</td>
+                    <td>+5566778899</td>
+                    <td>michael.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Wilson</td>
+                    <td>654 Cedar St</td>
+                    <td>+9988776655</td>
+                    <td>sarah.wilson@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+            <br>
+
+            <label>Interests:</label>
+            <input type="checkbox" name="interests" value="sports"> Sports
+            <input type="checkbox" name="interests" value="music"> Music
+            <input type="checkbox" name="interests" value="technology"> Technology
+            <br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
